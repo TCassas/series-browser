@@ -38,22 +38,16 @@ const Home = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const request = await Axios.get(`http://api.tvmaze.com/search/shows?q=${search}`);
+        const request = await Axios.get(`https://api.tvmaze.com/search/shows?q=${search}`);
         if(request.data.length != 0) {
             setShows(request.data);
         } else {
             setShows("empty");
         }
-
-        console.log(shows)
     }
 
     const handleChange = (e) => {
         setSearch(e.target.value);
-    }
-
-    const info = (show) => {
-        console.log(show);
     }
 
     return (
@@ -65,7 +59,7 @@ const Home = () => {
         >
             <Header />
             <Form submit={handleSubmit} change={handleChange}/>
-            <ShowsList shows={shows} items={visibleShows} info={info}/>
+            <ShowsList shows={shows} items={visibleShows}/>
         </motion.div>
     );
 }

@@ -10,10 +10,10 @@ const Info = ({ Match }) => {
     const { id } = useParams();
 
     const fetchShow = async () => {
-        let show = await axios.get(`http://api.tvmaze.com/shows/${id}`);
+        let show = await axios.get(`https://api.tvmaze.com/shows/${id}`);
         show = show.data;
         
-        let episodes = await axios.get(`http://api.tvmaze.com/shows/${id}/episodes`);
+        let episodes = await axios.get(`https://api.tvmaze.com/shows/${id}/episodes`);
         show.episodes = episodes.data;
 
         return show;
