@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/series-browser/static/css/main.b67a7cc7.chunk.css",
-    "main.js": "/series-browser/static/js/main.94faaed8.chunk.js",
-    "main.js.map": "/series-browser/static/js/main.94faaed8.chunk.js.map",
+    "main.css": "/series-browser/static/css/main.3ca34c25.chunk.css",
+    "main.js": "/series-browser/static/js/main.e3bac97c.chunk.js",
+    "main.js.map": "/series-browser/static/js/main.e3bac97c.chunk.js.map",
     "runtime-main.js": "/series-browser/static/js/runtime-main.b7b49bf9.js",
     "runtime-main.js.map": "/series-browser/static/js/runtime-main.b7b49bf9.js.map",
     "static/js/2.192dc760.chunk.js": "/series-browser/static/js/2.192dc760.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.97ea2fa2.chunk.js": "/series-browser/static/js/3.97ea2fa2.chunk.js",
     "static/js/3.97ea2fa2.chunk.js.map": "/series-browser/static/js/3.97ea2fa2.chunk.js.map",
     "index.html": "/series-browser/index.html",
-    "static/css/main.b67a7cc7.chunk.css.map": "/series-browser/static/css/main.b67a7cc7.chunk.css.map",
+    "static/css/main.3ca34c25.chunk.css.map": "/series-browser/static/css/main.3ca34c25.chunk.css.map",
     "static/js/2.192dc760.chunk.js.LICENSE.txt": "/series-browser/static/js/2.192dc760.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b7b49bf9.js",
     "static/js/2.192dc760.chunk.js",
-    "static/css/main.b67a7cc7.chunk.css",
-    "static/js/main.94faaed8.chunk.js"
+    "static/css/main.3ca34c25.chunk.css",
+    "static/js/main.e3bac97c.chunk.js"
   ]
 }
