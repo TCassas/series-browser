@@ -105,10 +105,6 @@ form button {
   width: 50%;
 }
 
-.info-left {
-  /* background-color: red; */
-}
-
 .info-show-image {
   border-radius: 8px;
   width: 240px;
@@ -128,12 +124,9 @@ form button {
 
 .info-show-summary {
   text-indent: 10px;
-}
-
-.info-right {
-  /* box-shadow: -5px -1px 5px -2px rgba(0,0,0,0.36);
-  -webkit-box-shadow: -5px -1px 5px -2px rgba(0,0,0,0.36);
-  -moz-box-shadow: -5px -1px 5px -2px rgba(0,0,0,0.36); */
+  height: 100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #show-menu {
@@ -144,6 +137,8 @@ form button {
 #show-menu h2 {
   width: 50%;
   text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 #selected {
@@ -177,6 +172,14 @@ form button {
 /* EPISODE */
 .episodes {
   margin-top: 13px;
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.info-left a {
+  margin-top: 10px;
+  text-align: center;
 }
 
 .episode-article  {
@@ -237,4 +240,14 @@ form button {
   font-size: 2em;
   font-style: italic;
   color: #57565669;
+}
+
+@media (max-width: 840px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .info-left, .info-right {
+    width: 100%;
+  }
 }

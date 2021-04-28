@@ -9,22 +9,23 @@ const SeriesInfo= (props) => {
 
     const containerVariants = {
         hidden: {
-            opacity: 0
+            opacity: 0,
         },
         visible: {
             opacity: 1,
-            x: 0,
             transition: { delay: 0.5 }
         },
         exit: {
-            opacity: 0
+            opacity: 0,
         }
     }
 
-    const handleOption = () => {
-        setMenuOption(!menuOption);
-        console.log(props.show);
-        console.log(menuOption)
+    const handleOptionInfo = () => {
+        setMenuOption(true);
+    }
+
+    const handleOptionEpi = () => {
+        setMenuOption(false);
     }
 
     return (
@@ -45,8 +46,8 @@ const SeriesInfo= (props) => {
             </section>
             <section className='info-right'>
                 <section id='show-menu'>
-                    <h2 id='selected' onClick={handleOption} > Information</h2>
-                    <h2 onClick={handleOption} >Episodes</h2>
+                    <h2 id={menuOption && 'selected'} onClick={handleOptionInfo} > Information</h2>
+                    <h2 id={!menuOption && 'selected'} onClick={handleOptionEpi} >Episodes</h2>
                 </section>
                 {menuOption ? 
                     <AnimatePresence>
