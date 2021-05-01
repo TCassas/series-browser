@@ -1,7 +1,6 @@
 import { React, useState, useEffect } from 'react'
 import axios from 'axios';
-import { useParams, Link } from "react-router-dom"
-import { motion } from 'framer-motion'
+import { useParams } from "react-router-dom"
 import SeriesInfo from './Info/SeriesInfo'
 
 const Info = ({ Match }) => {
@@ -28,7 +27,8 @@ const Info = ({ Match }) => {
     }, [])
 
     return (
-        loading ? null : <SeriesInfo show={show} />
+        !loading && <SeriesInfo show={show} />
+
     )
 }
 

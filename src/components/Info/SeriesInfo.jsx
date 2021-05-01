@@ -71,7 +71,7 @@ const SeriesInfo= (props) => {
                                     </tr>
                                     <tr>
                                         <td>Genres</td>
-                                        <td>xD</td>
+                                        <td>{props.show.genres.map((genre, i) => genre + (i + 1 != props.show.genres.length ? ', ' : ''))}</td>
                                     </tr>
                                     <tr>
                                         <td>Network</td>
